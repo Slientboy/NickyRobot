@@ -4,7 +4,7 @@ from typing import Dict, List, Union
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["SaitamaRobot"]
+db = client["MashaRoBot"]
 karmadb = db.karma
 
 async def get_karmas_count() -> dict:
