@@ -106,7 +106,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from MashaRoBot.config import Development as Config
+    from NickyRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -220,7 +220,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from MashaRoBot.modules.helper_funcs.handlers import (
+from NickyRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
