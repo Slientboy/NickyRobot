@@ -72,3 +72,4 @@ textblob
 nudepy
 
 motor
+fontTools
