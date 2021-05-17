@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from MashaRoBot import (
+from NickyRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -25,9 +25,9 @@ from MashaRoBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from MashaRoBot.modules import ALL_MODULES
-from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin
-from MashaRoBot.modules.helper_funcs.misc import paginate_modules
+from .modules import ALL_MODULES
+from .modules.helper_funcs.chat_status import is_user_admin
+from .modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
