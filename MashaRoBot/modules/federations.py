@@ -1,5 +1,6 @@
-from MashaRoBot import telethn as tbot
-from MashaRoBot import tbot, CMD_HELP, OWNER_ID
+#federation
+
+from MashaRoBot import telethn , CMD_HELP, OWNER_ID
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
 from MashaRoBot.function import is_admin
