@@ -8,8 +8,8 @@ from pathlib import Path
 from telethon import events
 
 from pymongo import MongoClient
-from MashaRoBot import MONGO_DB_URI
-from MashaRoBot import telethn
+from NickyRobot import MONGO_DB_URI
+from NickyRobot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
