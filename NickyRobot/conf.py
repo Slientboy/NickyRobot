@@ -1,5 +1,5 @@
 from envparse import env
-from MashaRoBot import LOGGER
+from NickyRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
