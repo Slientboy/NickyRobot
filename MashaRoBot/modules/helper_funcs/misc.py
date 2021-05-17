@@ -121,7 +121,17 @@ def sendMessage(text: str, bot: Bot, update: Update):
                                     reply_to_message_id=update.message.message_id,
                                     text=text, parse_mode=ParseMode.HTML)
 
+def build_keyboard_parser(bot, chat_id, buttons):
+    keyb = []
+    for btn in buttons:
+        if btn.url == "{rules}":
+            btn.url = "http://t.me/{}?start={}".format(bot.username, chat_id)
+        if btn.same_line and keyb:
+            keyb[-1].append(InlineKeyboardButton(btn.name, url=btn.url))
+        else:
+            keyb.append([InlineKeyboardButton(btn.name, url=btn.url)])
 
+    return keyb
 
 def is_module_loaded(name):
      return name not in NO_LOAD
