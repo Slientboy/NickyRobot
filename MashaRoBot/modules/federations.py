@@ -1,4 +1,4 @@
-from MashaRoBot import tbot, CMD_HELP, OWNER_ID
+from MashaRoBot import telethn, CMD_HELP, OWNER_ID
 import os, re, csv, json, time, uuid, pytz
 from datetime import datetime
 from MashaRoBot.function import is_admin
