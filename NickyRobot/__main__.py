@@ -74,28 +74,28 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`𝙷𝙴𝚈,𝙷𝙸𝙸 𝙸 𝙰𝙼 𝙴𝙼𝙲𝙴𝙴`
-`𝙸'𝙰𝙼 𝙰𝙽 𝙰𝙽𝙸𝙼𝙴 𝚃𝙷𝙴𝙼𝙴𝙳 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙸𝙽𝙶 𝙱𝙾𝚃! 𝙲𝙻𝙸𝙲𝙺` *📚𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂* `𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝚃𝙾 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙰𝙽𝙳 𝙼𝚈 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽𝚂.
-**Powered By** @DaisyXNews` [.](https://telegra.ph/file/14870c995b7b3bf2cd6e3.jpg) 
+`𝙷𝙴𝚈,𝙷𝙸𝙸 𝙸 𝙰𝙼 ℕ𝕀ℂ𝕂𝕐
+`𝙸'𝙰𝙼 ℕ𝕚𝕔𝕜𝕪 𝙰𝙽 𝙰𝙽𝙸𝙼𝙴 𝚃𝙷𝙴𝙼𝙴𝙳 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙸𝙽𝙶 𝙱𝙾𝚃! 𝙲𝙻𝙸𝙲𝙺` *📚𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂* `𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝚃𝙾 𝙴𝚇𝙿𝙻𝙾𝚁𝙴 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙼𝙴 𝙰𝙽𝙳 𝙼𝚈 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽𝚂.
+**Build By** @official_smile_of_your_face[.](https://telegra.ph/file/0d1ac99366ffb35187700.jpg) 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD EMCEE TO YOUR GROUP ➕️", url="t.me/Emcee_Bot?startgroup=true"),
+            text="➕️ ADD Nicky TO YOUR GROUP ➕️", url="t.me/nicky_robot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text="📚COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="ℹ️Info", callback_data="masha_"),
+        InlineKeyboardButton(text="📚help & command", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="✨EMCEE DEVS✨", url="t.me/Emcee_Devs"),
+            text="✨EMCEE DEVS✨", url="t.me/ɳιƈƙყ σɯɳҽɾ"),
         InlineKeyboardButton(
-            text="👥SUPPORT👥", url="https://t.me/Emcee_Support"),
+            text="👥SUPPORT👥", url="https://t.me/official_friendship"),
     ],
     [  
-        InlineKeyboardButton(text="❄️EMCEE WEB❄️", url="https://emcee.art.blog/"
+        InlineKeyboardButton(text="❄️ƇʅΑɳ❄️", url="https://t.me/OFFICIAL_OLYMPUS"
     ),
     ], 
     
@@ -104,7 +104,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-༆*EMCEE comes with many special features in it*༆
+ツ*Nicky comes with many special features in it*༆
 ꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF EMCEE*꧂
 𖣘 *All commands can either be used with* `/` *or* `!`.
 𖣘 *If you facing any issue or find any bugs in any command then you can report it in @Emcee_Support* [.](https://telegra.ph/file/073b380cf13052e500490.jpg)
@@ -196,7 +196,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅⏪ BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -356,7 +356,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *EMCEE*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Nicky*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -364,7 +364,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Emcee's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://t.me/Emcee_Support).
+                 Here is the [💾Repository](https://github.com/subhodip420/NICKY-ROBOT).
                  If you have any question about Emcee, let us know at @Emceesupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -391,7 +391,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Emcee*
+            text=""" Hi..😌 I'm *Nicky*
                  \nHere is the [Source Code](https://t.me/DaisyXNews) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
